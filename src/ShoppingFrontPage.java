@@ -66,11 +66,13 @@ public class ShoppingFrontPage extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Medicineshop med =new  Medicineshop();
         med.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        Groceryshop Gro =new Groceryshop();
        Gro.setVisible(true);
+       dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

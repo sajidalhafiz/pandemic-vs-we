@@ -91,7 +91,7 @@ public class Groceryshop extends javax.swing.JFrame {
         });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 410, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/grosaryshoping.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Shopping/grosaryshoping.png"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(700, 552));
         jLabel1.setMinimumSize(new java.awt.Dimension(700, 552));
         jLabel1.setPreferredSize(new java.awt.Dimension(900, 450));
@@ -140,11 +140,13 @@ public class Groceryshop extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         ShoppingFrontPage med =new ShoppingFrontPage();
         med.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         lastpage med =new lastpage();
         med.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     /**

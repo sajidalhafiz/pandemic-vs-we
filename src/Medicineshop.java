@@ -104,7 +104,7 @@ public class Medicineshop extends javax.swing.JFrame{
         getContentPane().add(priviouspage, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, 900, 100));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/medicine.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Shopping/medicine.png"))); // NOI18N
         jLabel2.setMaximumSize(new java.awt.Dimension(700, 552));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 450));
 
@@ -146,11 +146,14 @@ public class Medicineshop extends javax.swing.JFrame{
     private void priviouspageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_priviouspageActionPerformed
         ShoppingFrontPage med =new ShoppingFrontPage();
         med.setVisible(true);
+        dispose();
     }//GEN-LAST:event_priviouspageActionPerformed
 
     private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
-         lastpage med =new lastpage();
+        lastpage med =new lastpage();
         med.setVisible(true);
+        dispose();
+        
     }//GEN-LAST:event_nextActionPerformed
 
     /**
