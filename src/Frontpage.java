@@ -33,6 +33,11 @@ public class Frontpage extends javax.swing.JFrame {
 
         onlineShoppingBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Frontpage/shoppingBtn.png"))); // NOI18N
         onlineShoppingBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        onlineShoppingBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onlineShoppingBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(onlineShoppingBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 290, 100, 30));
 
         dietBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Frontpage/healthyDietBtn.png"))); // NOI18N
@@ -87,6 +92,13 @@ public class Frontpage extends javax.swing.JFrame {
         abtPage.setVisible(true);
         dispose();
     }//GEN-LAST:event_aboutBtnActionPerformed
+
+    private void onlineShoppingBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onlineShoppingBtnActionPerformed
+        // TODO add your handling code here:
+        ShoppingFrontPage shpFrntPage = new ShoppingFrontPage();
+        shpFrntPage.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_onlineShoppingBtnActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
