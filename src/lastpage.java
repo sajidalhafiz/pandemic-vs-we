@@ -39,7 +39,7 @@ public class lastpage extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 340, 280, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/last page.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Shopping/last page.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 552));
 
         pack();
@@ -48,6 +48,9 @@ public class lastpage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Frontpage frntPage = new Frontpage();
+        frntPage.setVisible(true);
+        dispose();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

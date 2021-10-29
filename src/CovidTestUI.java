@@ -172,6 +172,7 @@ public class CovidTestUI extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         setResult = new javax.swing.JLabel();
         reTestBtn = new javax.swing.JButton();
+        reTestBtn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Covid Test");
@@ -2048,10 +2049,24 @@ public class CovidTestUI extends javax.swing.JFrame {
         reTestBtn.setForeground(new java.awt.Color(255, 255, 255));
         reTestBtn.setText("Re-Test");
         reTestBtn.setBorder(null);
+        reTestBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         reTestBtn.setPreferredSize(new java.awt.Dimension(100, 31));
         reTestBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reTestBtnActionPerformed(evt);
+            }
+        });
+
+        reTestBtn1.setBackground(new java.awt.Color(51, 0, 153));
+        reTestBtn1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        reTestBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        reTestBtn1.setText("Home");
+        reTestBtn1.setBorder(null);
+        reTestBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reTestBtn1.setPreferredSize(new java.awt.Dimension(100, 31));
+        reTestBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reTestBtn1ActionPerformed(evt);
             }
         });
 
@@ -2067,13 +2082,14 @@ public class CovidTestUI extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ResultLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ResultLayout.createSequentialGroup()
-                                .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(292, 292, 292))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ResultLayout.createSequentialGroup()
-                                .addComponent(reTestBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(392, 392, 392))))))
+                        .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(292, 292, 292))))
+            .addGroup(ResultLayout.createSequentialGroup()
+                .addGap(322, 322, 322)
+                .addComponent(reTestBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(reTestBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         ResultLayout.setVerticalGroup(
             ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2083,7 +2099,9 @@ public class CovidTestUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(reTestBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(reTestBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reTestBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(121, Short.MAX_VALUE))
         );
 
@@ -2592,6 +2610,13 @@ public class CovidTestUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jCheckBox33ActionPerformed
 
+    private void reTestBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reTestBtn1ActionPerformed
+        // TODO add your handling code here:
+        Frontpage frntPage = new Frontpage();
+        frntPage.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_reTestBtn1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2749,6 +2774,7 @@ public class CovidTestUI extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JPanel question;
     private javax.swing.JButton reTestBtn;
+    private javax.swing.JButton reTestBtn1;
     private javax.swing.JLabel setResult;
     private javax.swing.JButton submitBtn;
     private javax.swing.JButton tab10NextBtn1;

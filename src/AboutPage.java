@@ -97,6 +97,11 @@ public class AboutPage extends javax.swing.JFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/covidTest.png"))); // NOI18N
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 50));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/covidResponse.png"))); // NOI18N
@@ -109,6 +114,11 @@ public class AboutPage extends javax.swing.JFrame {
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/shopping.png"))); // NOI18N
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 200, 50));
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/LeisureTime.png"))); // NOI18N
@@ -191,6 +201,20 @@ public class AboutPage extends javax.swing.JFrame {
         frPage.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        CovidTestUI cvdTst = new CovidTestUI();
+        cvdTst.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        ShoppingFrontPage shpFrntpage = new ShoppingFrontPage();
+        shpFrntpage.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
