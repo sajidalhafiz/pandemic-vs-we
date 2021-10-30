@@ -42,6 +42,11 @@ public class Frontpage extends javax.swing.JFrame {
 
         dietBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Frontpage/healthyDietBtn.png"))); // NOI18N
         dietBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dietBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dietBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(dietBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 400, 100, 30));
 
         covidResponseBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Frontpage/covidRresponseBtn.png"))); // NOI18N
@@ -115,6 +120,14 @@ public class Frontpage extends javax.swing.JFrame {
         lt.setVisible(true);
         dispose();
     }//GEN-LAST:event_leisureBtnActionPerformed
+
+    private void dietBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dietBtnActionPerformed
+        // TODO add your handling code here:
+        HealthDiet hltDiet = new HealthDiet();
+        hltDiet.setVisible(true);
+        dispose();
+        
+    }//GEN-LAST:event_dietBtnActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
