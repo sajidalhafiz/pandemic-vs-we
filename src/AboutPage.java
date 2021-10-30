@@ -123,6 +123,11 @@ public class AboutPage extends javax.swing.JFrame {
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/LeisureTime.png"))); // NOI18N
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 200, 50));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/AboutUs.png"))); // NOI18N
@@ -215,6 +220,13 @@ public class AboutPage extends javax.swing.JFrame {
         shpFrntpage.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        LeisureTime lt = new LeisureTime();
+        lt.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -55,6 +55,11 @@ public class Frontpage extends javax.swing.JFrame {
 
         leisureBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Frontpage/leisureTimeBtn.png"))); // NOI18N
         leisureBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        leisureBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                leisureBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(leisureBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 480, 100, 30));
 
         aboutBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Frontpage/aboutBtn.png"))); // NOI18N
@@ -99,6 +104,13 @@ public class Frontpage extends javax.swing.JFrame {
         shpFrntPage.setVisible(true);
         dispose();
     }//GEN-LAST:event_onlineShoppingBtnActionPerformed
+
+    private void leisureBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leisureBtnActionPerformed
+        // TODO add your handling code here:
+        LeisureTime lt = new LeisureTime();
+        lt.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_leisureBtnActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
