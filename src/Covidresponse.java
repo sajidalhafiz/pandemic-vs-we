@@ -73,6 +73,7 @@ public class CovidResponse extends javax.swing.JFrame {
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, 150, 30));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/Emergency Response/Homepage.png"))); // NOI18N
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

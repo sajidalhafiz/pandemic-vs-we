@@ -106,6 +106,11 @@ public class AboutPage extends javax.swing.JFrame {
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/covidResponse.png"))); // NOI18N
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 50));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PandemicVsWe/Images/About/HealthyDiet.png"))); // NOI18N
@@ -227,6 +232,13 @@ public class AboutPage extends javax.swing.JFrame {
         lt.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        CovidResponse cvdRes = new CovidResponse();
+        cvdRes.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
