@@ -77,6 +77,7 @@ public class Medicineshop extends javax.swing.JFrame{
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 450, 900, 100));
 
         jButton4.setText("Click here to see total cost");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -88,6 +89,7 @@ public class Medicineshop extends javax.swing.JFrame{
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, 220, 20));
 
         next.setText("Next page");
+        next.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nextActionPerformed(evt);
@@ -96,6 +98,7 @@ public class Medicineshop extends javax.swing.JFrame{
         getContentPane().add(next, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 410, -1, -1));
 
         priviouspage.setText("Privous page");
+        priviouspage.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         priviouspage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 priviouspageActionPerformed(evt);
