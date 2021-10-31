@@ -89,6 +89,10 @@ public class Frontpage extends javax.swing.JFrame {
 
     private void covidResponseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_covidResponseBtnActionPerformed
         // TODO add your handling code here:
+        CovidResponse response = new CovidResponse();
+        response.setVisible(true);
+        dispose();
+          
     }//GEN-LAST:event_covidResponseBtnActionPerformed
 
     private void aboutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutBtnActionPerformed
